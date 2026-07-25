@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Direction</title>
+    <style>
+      .container {
+        width: 900px;
+        height: 800px;
+        border: 5px solid rgb(232, 240, 10);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 20px auto;
+      }
+
+      .container > * {
+        border: 5px solid white;
+        flex-basis: 300px;
+        padding: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .red {
+        background: #eb4d4b;
+      }
+
+      .blue {
+        background: #4834d4;
+      }
+
+      .green {
+        background: #6ab04c;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="red">
+        <h2>HTML</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          potenti. Donec viverra sem vel justo condimentum, sed luctus augue
+          luctus.
+        </p>
+      </div>
+
+      <div class="blue">
+        <h2>CSS</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed
+          ligula sed neque fermentum tincidunt. Fusce varius velit sed massa
+          tincidunt suscipit.
+        </p>
+      </div>
+
+      <div class="green">
+        <h2>Flexbox</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae
+          justo sit amet lectus dignissim placerat. Vestibulum ante ipsum primis
+          in faucibus orci luctus.
+        </p>
+      </div>
+  </body>
+</html>
