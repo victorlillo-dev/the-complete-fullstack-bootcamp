@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flex Layout Playground</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        width: 700px;
+        height: 500px;
+        gap: 10px;
+
+        border: 5px solid gold;
+        background-color: #eeeeee;
+      }
+
+      .container > div {
+        flex-basis: 150px;
+        padding: 20px;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .red {
+        background-color: #eb4d4b;
+      }
+
+      .orange {
+        background-color: #f0932b;
+      }
+
+      .yellow {
+        background-color: #c8a900;
+      }
+
+      .green {
+        background-color: #6ab04c;
+      }
+
+      .blue {
+        background-color: #4834d4;
+      }
+
+      .indigo {
+        background-color: #30336b;
+      }
+
+      .purple {
+        background-color: #be2edd;
+      }
+
+      .green {
+        order: -1;
+        align-self: flex-start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Flex Layout</h1>
+
+    <div class="container">
+      <div class="red">Rojo</div>
+      <div class="orange">Naranja</div>
+      <div class="yellow">Amarillo</div>
+      <div class="green">Verde</div>
+      <div class="blue">Azul</div>
+      <div class="indigo">Índigo</div>
+      <div class="purple">Violeta</div>
+    </div>
+  </body>
+</html>

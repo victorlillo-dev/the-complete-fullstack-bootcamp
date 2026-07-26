@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Sizing Playground</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 30px;
+    }
+
+    h1 {
+      margin-bottom: 25px;
+    }
+
+    .container {
+      display: flex;
+      width: 900px;
+      border: 5px solid gold;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .card {
+      background: #3498db;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+
+      .card:nth-child(1) {
+        flex: 1;
+      }
+
+      .card:nth-child(2) {
+        flex: 2;
+      }
+
+      .card:nth-child(3) {
+        flex: 3;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Flex Sizing Playground</h1>
+  <div class="container">
+    <div class="card">
+      <h2>HTML</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+    <div class="card">
+      <h2>CSS</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laboriosam explicabo minus doloremque.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Flexbox</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laboriosam explicabo minus doloremque accusamus exercitationem.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

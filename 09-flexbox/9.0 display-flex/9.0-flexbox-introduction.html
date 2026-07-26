@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción a Flexbox</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        gap: 5px;
+        list-style: none;
+        padding: 1rem;
+        border: 4px solid gold;
+      }
+
+      .container li {
+        padding: 0.75rem 1rem;
+        background-color: #30336b;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul class="container">
+        <li>Inicio</li>
+        <li>Nosotros</li>
+        <li>Servicios</li>
+        <li>Contacto</li>
+      </ul>
+    </nav>
+  </body>
+</html>
