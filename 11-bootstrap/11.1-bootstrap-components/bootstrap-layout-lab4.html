@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bootstrap Layout Lab</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    .caja {
+      background-color: lightblue;
+      border: 2px solid black;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">Full Stack Lab</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menuPrincipal"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <div class="navbar-nav">
+        <a class="nav-link " href="#">Inicio</a>
+        <a class="nav-link active" href="#">Acerca de</a>
+        <a class="nav-link" href="#">Servicios</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<div class="px-4 py-5 my-5 text-center">
+
+  <h1 class="display-5 fw-bold">
+    Mi laboratorio Full Stack
+  </h1>
+
+  <div class="col-lg-6 mx-auto">
+
+    <p class="lead mb-4">
+      Estoy aprendiendo a construir sitios web utilizando
+      componentes de Bootstrap.
+    </p>
+
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+      <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+        Comenzar
+      </button>
+
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+        Más información
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="container px-4 py-5">
+
+  <h2 class="pb-2 border-bottom">
+    Lo que estoy aprendiendo
+  </h2>
+
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+<div class="col">
+
+  <div class="feature-icon">
+    <img src="html-css.svg" alt="HTML y CSS" height="40">
+  </div>
+
+  <h3>HTML y CSS</h3>
+
+  <p>
+    Construcción y diseño de páginas web.
+  </p>
+
+</div>
+
+    <div class="col">
+      <h3>Bootstrap</h3>
+      <p>
+        Componentes y diseño responsive.
+      </p>
+    </div>
+
+    <div class="col">
+      <h3>Full Stack</h3>
+      <p>
+        Preparándome para construir aplicaciones completas.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Mi primera Card</h5>
+    <p class="card-text">
+      Estoy aprendiendo componentes de Bootstrap.
+    </p>
+    <a href="#" class="btn btn-primary">Ver más</a>
+  </div>
+</div>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>
