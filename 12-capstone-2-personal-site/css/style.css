@@ -1,0 +1,40 @@
+#hero {
+    background-color: #14213d;
+    color: white;
+}
+
+#hero .btn {
+    color: #14213d;
+}
+
+.experience-item {
+    position: relative;
+    border-left: 3px solid #fca311;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.experience-item::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fca311;
+    border-radius: 50%;
+    left: -7.5px;
+    top: 0px;
+}
+
+.experience-date {
+    color: #2e61a8;
+    font-weight: 500;
+}
+
+#contacto {
+    background-color: #14213d;
+    color: white;
+}
+
+#contacto a {
+    color: #fca311;
+}
